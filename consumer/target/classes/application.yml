@@ -1,0 +1,13 @@
+logging:
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
+spring:
+  rabbitmq:
+    host: 192.168.216.100 # 主机名 rabbitMQ的ip地址,改成自己的
+    port: 5672 # 端口
+    username: root  # 用户名
+    password: 1234  # 密码
+    virtual-host: /  # 虚拟主机
+    listener:
+      simple:
+        prefetch: 1
